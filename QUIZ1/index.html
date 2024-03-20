@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="bg">
+    <div style="padding: 5%">
+        <h4 style="margin-left: 8%;">Kuis 1</h4>
+        <p style="margin-left: 8%;">Nama : Aditya Pratama</p>
+        <p style="margin-left: 8%;">NIM : 12250112585</p>
+    </div>
+
+    <div class="container">
+        <div class="img-container">
+            <img src="ageraa.jpg" alt="Gambar 1">
+            <p style="text-align: center;">
+                Koenigsegg Agera:<br>
+                Mobil produksi supercar dari Swedia.<br>
+                Dikenal sebagai mobil produksi tercepat di dunia.<br>
+                Menggunakan mesin twin-turbocharged V8 dengan tenaga besar.<br>
+                Desain aerodinamis dan performa luar biasa.
+            </p>
+            <button type="button" class="btn btn-secondary" onclick="ubahWarna1()">Ganti Warna</button>
+        </div>
+        <div class="img-container">
+            <img src="regera.jpg" alt="Gambar 2">
+            <p style="text-align: center;">
+                Koenigsegg Regera:<br>
+                Hypercar hibrida dengan mesin twin-turbocharged V8 dan tiga motor listrik.<br>
+                Total output daya mencapai 1500 tenaga kuda.<br>
+                Sistem transmisi unik yang memungkinkan akselerasi luar biasa.
+            </p>
+            <button type="button" class="btn btn-secondary" onclick="ubahWarna2()">Ganti Warna</button>
+        </div>
+        <div class="img-container">
+            <img src="jesko.jpg" alt="Gambar 3">
+            <p style="text-align: center;">
+                Koenigsegg Jesko:<br>
+                Penerus Koenigsegg Agera.<br>
+                Mesin twin-turbocharged V8 dengan tenaga 1600 tenaga kuda.<br>
+                Desain futuristik dengan fitur-fitur khas Koenigsegg.
+            </p>
+            <button type="button" class="btn btn-secondary" onclick="ubahWarna3()">Ganti Warna</button>
+        </div>
+    </div>
+
+    <script>
+        function ubahWarna1() {
+            document.getElementById("bg").style.backgroundColor = "#35374B";
+        }
+
+        function ubahWarna2() {
+            document.getElementById("bg").style.backgroundColor = "#344955";
+        }
+
+        function ubahWarna3() {
+            document.getElementById("bg").style.backgroundColor = "#50727B";
+        }
+    </script>
+
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .img-container {
+            flex-basis: 30%;
+            margin-bottom: 20px;
+        }
+    </style>
+</body>
+</html>

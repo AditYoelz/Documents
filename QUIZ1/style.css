@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: row; /* Mengatur arah flexbox menjadi "row" */
+}
+
+.item {
+    margin-right: 20px; /* Jarak antara setiap item */
+    text-align: center; /* Pusatkan teks dan tombol */
+}
+
+.item img {
+    width: 200px; /* Lebar gambar */
+    height: auto; /* Sesuaikan tinggi */
+}
+
+.item p {
+    margin-top: 10px; /* Jarak antara teks dan gambar */
+}
+
+.item button {
+    margin-top: 10px; /* Jarak antara tombol dan teks */
+}
